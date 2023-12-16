@@ -21,6 +21,10 @@ public class MergeSortTester extends SortTester {
     this.sorter = MergeSort.SORTER;
   } // MergeSortTester()
 
+  public void bigIntArrTest() {
+    super.bigIntArrTest();
+  }
+
   @Test
   @Override
   public void intTest() {

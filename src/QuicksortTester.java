@@ -21,6 +21,10 @@ public class QuicksortTester extends SortTester {
     this.sorter = Quicksort.SORTER;
   } // QuicksortTester()
 
+  public void bigIntArrTest() {
+    super.bigIntArrTest();
+  }
+
   @Test
   @Override
   public void intTest() {

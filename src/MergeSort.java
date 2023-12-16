@@ -34,14 +34,14 @@ public class MergeSort implements Sorter {
 
   @Override
   public <T> void sort(T[] values, Comparator<? super T> order) {
-    sortWithBounds(values, 0, values.length, order);
+    sort(values, 0, values.length, order);
   }
 
-  static <T> void sortWithBounds(T[] values, int lo, int hi, Comparator<? super T> order) {
+  static <T> void sort(T[] values, int lo, int hi, Comparator<? super T> order) {
     if (hi - lo > 1) {
       int mid = lo + (hi - lo) / 2;
-      sortWithBounds(values, lo, mid, order);
-      sortWithBounds(values, mid, hi, order);
+      sort(values, lo, mid, order);
+      sort(values, mid, hi, order);
 
       merge(values, lo, mid, hi, order);
     }

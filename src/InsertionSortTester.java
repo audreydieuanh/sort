@@ -16,6 +16,10 @@ public class InsertionSortTester extends SortTester {
     this.sorter = InsertionSort.SORTER;
   } // InsertionSortTester()
 
+  public void bigIntArrTest() {
+    super.bigIntArrTest();
+  }
+
   @Test
   @Override
   public void intTest() {

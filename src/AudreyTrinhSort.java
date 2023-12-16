@@ -7,9 +7,6 @@ import java.util.Comparator;
  * @reference: 3-way pivot quicksort
  */
 public class AudreyTrinhSort implements Sorter {
-  /**
-   * Run some experiments.
-   */
 
   // +--------+------------------------------------------------------
   // | Fields |
@@ -34,7 +31,6 @@ public class AudreyTrinhSort implements Sorter {
   // | Methods |
   // +---------+
 
-
   /**
    * Sort the values in values using order to compare values.
    */
@@ -43,8 +39,8 @@ public class AudreyTrinhSort implements Sorter {
     sort(values, 0, values.length, order);
   } // sort(T[], Comparator<? super T>
 
-
-  private static <T> void sort(T[] arr, int lb, int ub, Comparator<? super T> order) {
+  private static <T> void sort(T[] arr, int lb, int ub, Comparator<? super T>
+          order) {
     if (ub - lb <= 1) {
       return;
     }
@@ -54,7 +50,8 @@ public class AudreyTrinhSort implements Sorter {
     sort(arr, segmentIndex[1], ub, order);
   }
 
-  static <T> int[] partition(T[] arr, int lb, int ub, Comparator<? super T> order) {
+  static <T> int[] partition(T[] arr, int lb, int ub, Comparator<? super T>
+          order) {
     T pivot = arr[ub - 1];
     int i = lb;
     int j = ub - 1;

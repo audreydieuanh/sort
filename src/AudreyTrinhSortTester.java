@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
  */
 public class AudreyTrinhSortTester extends SortTester {
 
-
   // +--------------+------------------------------------------------
   // | Constructors |
   // +--------------+
@@ -16,6 +15,7 @@ public class AudreyTrinhSortTester extends SortTester {
     super();
     this.sorter = AudreyTrinhSort.SORTER;
   } // QuicksortTester()
+
 
   @Test
   @Override
